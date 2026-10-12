@@ -1,0 +1,20 @@
+keys:
+  - &admin_vx_t480 age187q78cklgfntel4krhs9uy7krxjrk4049x8yqlcnqhvju7n78gnq32ewrx
+  - &admin_vx_drax age1g56ejve3tgl9r4w9m5s0rtulrz696sh4y0a0cqynd9f6d9pn23ts58klfa
+
+  - &host_t480 age1qswq2xaxhgfu6p2559zs7ypgvg09dj5dgj20sjsg9myrn5uvgcsqqjyar7
+  - &host_drax age1z9j3ny4ypcmvtmr036dv4yz02777szama2vluvzegemxpzud3ezqdfx8d2
+creation_rules:
+  - path_regex: secrets/[^/]+\.(yaml|json|env|ini)$
+    key_groups:
+      - age:
+          - *admin_vx_t480
+          - *admin_vx_drax
+
+  - path_regex: hosts/common/[^/]+\.(yaml|json|env|ini)$
+    key_groups:
+      - age:
+          - *host_t480
+          - *host_drax
+          - *admin_vx_t480
+          - *admin_vx_drax
