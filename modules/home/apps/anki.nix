@@ -1,12 +1,11 @@
 { config, ... }:
+let 
+  ankiSopsFile = ../../../secrets/anki.yaml;
+in 
 {
   sops.secrets = {
-    "anki/user" = {
-      sopsFile = ../../../secrets/anki.yaml;
-    };
-    "anki/key" = {
-      sopsFile = ../../../secrets/anki.yaml;
-    };
+    "anki/user".sopsFile = ankiSopsFile;
+    "anki/key".sopsFile = ankiSopsFile;
   };
 
   programs.anki = {

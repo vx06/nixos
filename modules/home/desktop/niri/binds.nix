@@ -13,7 +13,7 @@ let
 in
 {
   wayland.windowManager.niri.settings.binds =
-    lib.optionalAttrs (config.programs.noctalia.enable or false) {
+    lib.optionalAttrs config.programs.noctalia.enable {
       "Mod+Ctrl+Shift+Alt+L".spawn = noctaliaMsg ++ [
         "session"
         "lock"

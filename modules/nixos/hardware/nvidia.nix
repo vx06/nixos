@@ -11,11 +11,8 @@
       open = true;
       nvidiaPersistenced = true;
       powerManagement.enable = true;
-      modesetting.enable = true;
       prime.allowExternalGpu = true;
     };
+    nvidia-container-toolkit.enable = true;
   };
-
-  services.displayManager.sddm.wayland.enable = lib.mkForce false;
-
 }

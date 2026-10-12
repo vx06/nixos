@@ -17,7 +17,6 @@
     onefetch
     bluetui
     caligula
-    brightnessctl
     dolphin-emu
     # mumble # 1.5.915 failed to build
     tenki
@@ -31,7 +30,6 @@
     charm-freeze
     wthrr
     dive
-    xwayland-satellite
     (inputs.subtui.packages.${pkgs.stdenv.hostPlatform.system}.subtui)
   ];
 

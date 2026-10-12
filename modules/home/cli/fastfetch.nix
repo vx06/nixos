@@ -4,7 +4,7 @@
     enable = true;
     settings = {
       logo = {
-        source = "${config.home.homeDirectory}/config/assets/fastfetch/nixos.png";
+        source = ../../../assets/fastfetch/nixos.png;
         type = "kitty";
         width = 20;
         padding = {

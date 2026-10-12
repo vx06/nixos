@@ -2,6 +2,7 @@
   pkgs,
   config,
   inputs,
+  lib,
   ...
 }:
 {
@@ -211,7 +212,7 @@
           ];
           "7esoorv3@alefvanoon.anonaddy.me" = {
             # libredirect settings
-            settings = with builtins; fromJSON (readFile ./libredirect-settings.json);
+            settings = lib.importJSON ./libredirect-settings.json;
             permissions = [
               "webRequest"
               "webRequestBlocking"
