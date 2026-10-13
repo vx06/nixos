@@ -1,5 +1,25 @@
 {
   "nodes": {
+    "ai-usagebar": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1791859477,
+        "narHash": "sha256-rJNlqIJs8Iq6guU6blhgtyAx8HMlreGQIjtP1o+DeA4=",
+        "owner": "akitaonrails",
+        "repo": "ai-usagebar",
+        "rev": "22975d7f248da5e41edb4a7e132adc2201f85d46",
+        "type": "github"
+      },
+      "original": {
+        "owner": "akitaonrails",
+        "repo": "ai-usagebar",
+        "type": "github"
+      }
+    },
     "better-fox": {
       "flake": false,
       "locked": {
@@ -132,11 +152,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1791846597,
-        "narHash": "sha256-R/lzSCNT2jm+nl6dtb5/+ZI1PRd5Y9QmDTdMpJdzmfo=",
+        "lastModified": 1791901665,
+        "narHash": "sha256-ALL4sVRN6ccPknNwlnDZfG+JeH3ZK2F5dY9jPPZRaPg=",
         "owner": "nix-community",
         "repo": "nur",
-        "rev": "83891a08b2e32f4a0da38d99e21d266b536ad452",
+        "rev": "ccfa9106ef1920c6c44dd9c7f489ea70f27ad699",
         "type": "github"
       },
       "original": {
@@ -147,6 +167,7 @@
     },
     "root": {
       "inputs": {
+        "ai-usagebar": "ai-usagebar",
         "better-fox": "better-fox",
         "catppuccin": "catppuccin",
         "home-manager": "home-manager",

@@ -50,15 +50,19 @@
             name = "Home Manager";
             urls = [
               {
-                template = "https://home-manager-options.extranix.com";
+                template = "https://search.nixos.org/options";
                 params = [
                   {
                     name = "query";
                     value = "{searchTerms}";
                   }
                   {
-                    name = "release";
-                    value = "master";
+                    name = "channel";
+                    value = "unstable";
+                  }
+                  {
+                    name = "source";
+                    value = "home_manager";
                   }
                 ];
               }
