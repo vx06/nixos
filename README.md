@@ -2,14 +2,14 @@
 
 **some of the todos**:
 
-- [ ] add more secretss
 - [ ] neovim (finally)
 - [ ] yazi configuration
-- [ ] niri/noctalia improvements, configure monitors
-- [ ] wireguard
 - [ ] steam etc.
 - [ ] more software, e.g. orcaslicer
       ...
+
+- for drax host reinstall: facter hardware configuration, disko fs management
+- check bios if csm is enabled
 
 **Notes for new hosts:**
 

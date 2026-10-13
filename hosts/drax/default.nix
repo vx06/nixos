@@ -19,7 +19,8 @@
     enable = true;
     device = "/dev/nvme0n1";
   };
-  
+  boot.kernelPackages = pkgs.linuxPackages_zen;
+
   home-manager = {
     useGlobalPkgs = true;
     useUserPackages = true;

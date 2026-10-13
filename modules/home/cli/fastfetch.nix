@@ -1,10 +1,10 @@
-{ config, ... }:
+{ config, inputs, ... }:
 {
   programs.fastfetch = {
     enable = true;
     settings = {
       logo = {
-        source = ../../../assets/fastfetch/nixos.png;
+        source = "${inputs.self}/assets/fastfetch/nixos.png";
         type = "kitty";
         width = 20;
         padding = {
