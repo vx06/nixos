@@ -30,7 +30,8 @@
     charm-freeze
     wthrr
     dive
-    (inputs.subtui.packages.${pkgs.stdenv.hostPlatform.system}.subtui)
+    inputs.ai-usagebar.packages.${pkgs.stdenv.hostPlatform.system}.default
+    inputs.subtui.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 
   programs.bat.enable = true;

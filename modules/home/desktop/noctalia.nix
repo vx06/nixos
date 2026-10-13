@@ -10,11 +10,7 @@
         community_palette = "Catppuccin Lavender"; # = mocha
       };
       bar = {
-        order = [ "main" ];
         default = {
-          enabled = false;
-        };
-        main = {
           capsule_group = [
             {
               fill = "surface_variant";
@@ -30,14 +26,16 @@
           ];
           center = [ "workspaces" ];
           end = [
-            "thepunkoff/pomodoro:widget"
-            "notifications"
+            "media"
+            "felipeartur/ai-usagebar:bar"
             "clipboard"
+            "andrewdems/vpn-manager:bar"
             "network"
             "bluetooth"
             "volume"
             "brightness"
             "battery"
+            "notifications"
             "control-center"
             "session"
           ];
@@ -47,18 +45,18 @@
           padding = 16;
           capsule = true;
           start = [
-            "launcher"
             "wallpaper"
-            "clock"
             "group:g1"
-            "media"
-            "avivbintangaringga/nix-monitor:widget"
+            "clock"
+            "thepunkoff/pomodoro:widget"
+            "reaperhound/ambient-sounds:widget"
           ];
         };
       };
       shell = {
         offline_mode = false;
         launch_apps_as_systemd_service = true;
+        font-family = "JetBrainsMono NF";
         animation = {
           enabled = true;
           speed = 1.5;
@@ -102,7 +100,8 @@
       plugins = {
         enabled = [
           "thepunkoff/pomodoro"
-          "avivbintangaringga/nix-monitor"
+          "andrewdems/vpn-manager"
+          "felipeartur/ai-usagebar"
         ];
         source = [
           {
@@ -125,9 +124,6 @@
           short-break-duration = 15;
           long-break-duration = 30;
           sessions-before-long-break = 2;
-        };
-        "avivbintangaringga/nix-monitor" = {
-          update_command = "nh os test";
         };
       };
       location = {

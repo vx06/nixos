@@ -1,4 +1,4 @@
-{ inputs, pkgs, ... }:
+{ inputs, pkgs, lib, ... }:
 {
   imports = [
     ./hardware-configuration.nix
@@ -19,15 +19,14 @@
     enable = true;
     device = "/dev/nvme0n1";
   };
-
-  #boot.loader.systemd-boot.enable = true;
-  #boot.loader.efi.canTouchEfiVariables = true;
-  boot.kernelPackages = pkgs.linuxPackages_latest;
-
+  
   home-manager = {
     useGlobalPkgs = true;
     useUserPackages = true;
-    users.vx = import ../../modules/home;
+    users.vx.imports = [
+      ../../modules/home
+      ./home.nix
+    ];
     startAsUserService = true;
     overwriteBackup = true;
     backupFileExtension = "hm-backup";
