@@ -20,6 +20,7 @@
     device = "/dev/nvme0n1";
   };
   boot.kernelPackages = pkgs.linuxPackages_zen;
+  boot.plymouth.enable = true;
 
   home-manager = {
     useGlobalPkgs = true;

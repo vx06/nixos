@@ -26,7 +26,6 @@
           ];
           center = [ "workspaces" ];
           end = [
-            "media"
             "felipeartur/ai-usagebar:bar"
             "clipboard"
             "andrewdems/vpn-manager:bar"
@@ -49,7 +48,7 @@
             "group:g1"
             "clock"
             "thepunkoff/pomodoro:widget"
-            "reaperhound/ambient-sounds:widget"
+            "media"
           ];
         };
       };
@@ -120,10 +119,10 @@
       };
       plugin_settings = {
         "thepunkoff/pomodoro" = {
-          work-duration = 90;
-          short-break-duration = 15;
+          work-duration = 50;
+          short-break-duration = 10;
           long-break-duration = 30;
-          sessions-before-long-break = 2;
+          sessions-before-long-break = 3;
         };
       };
       location = {
