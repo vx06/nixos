@@ -30,6 +30,8 @@
     charm-freeze
     wthrr
     dive
+    remnote
+    orca-slicer
     inputs.ai-usagebar.packages.${pkgs.stdenv.hostPlatform.system}.default
     inputs.subtui.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
