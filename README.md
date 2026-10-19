@@ -4,9 +4,9 @@
 
 - [ ] neovim (finally)
 - [ ] yazi configuration
-- [ ] steam etc.
-- [ ] more software, e.g. orcaslicer
-      ...
+- [ ] seperate `modules/home/cli/tools.nix` pkgs to categorized modules, e.g. messaging apps, 3d, ...
+- [ ] more software
+- [ ] ...
 
 - for drax host reinstall: facter hardware configuration, disko fs management
 - check bios if csm is enabled

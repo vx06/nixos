@@ -21,8 +21,8 @@
     # mumble # 1.5.915 failed to build
     tenki
     tarts
-    signal-desktop
-    simplex-chat-desktop
+    signal-desktop # messaging
+    simplex-chat-desktop # messaging
     ticker
     sshs
     proton-vpn
@@ -30,8 +30,8 @@
     charm-freeze
     wthrr
     dive
-    remnote
-    orca-slicer
+    remnote # study
+    orca-slicer # 3d printing
     inputs.ai-usagebar.packages.${pkgs.stdenv.hostPlatform.system}.default
     inputs.subtui.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
