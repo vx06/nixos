@@ -3,13 +3,6 @@
   ...
 }:
 {
-  imports = [
-    ./cli
-    ./apps
-    ./desktop
-    ./secrets/sops.nix
-  ];
-
   home = {
     username = "vx";
     homeDirectory = "/home/vx";

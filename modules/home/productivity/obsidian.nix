@@ -18,19 +18,6 @@
           downscalePercent = 100;
         };
       };
-      #communityPlugins = with pkgs; [
-      #  { 
-      #    pkg = obsidianPlugins.remotely-save;
-      #    # TODO     
-      #    # settings = {
-      #    #   
-      #    #  } 
-      #  }
-      #  { 
-      #    pkg = obsidianPlugins.obsidian-latex-suite;  
-      #  }
-      #];
-      # themes = with pkgs; [ obsidianThemes.catppuccin ];
     };
   };
 }

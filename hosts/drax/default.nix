@@ -9,6 +9,7 @@
     ../../modules/nixos/hardware/power.nix
     ../../modules/nixos/hardware/nvidia.nix
     ../../modules/nixos/services/printing.nix
+    ../../modules/nixos/gaming
     inputs.home-manager.nixosModules.home-manager
   ];
 
@@ -27,6 +28,15 @@
     useUserPackages = true;
     users.vx.imports = [
       ../../modules/home
+      ../../modules/home/apps
+      ../../modules/home/art
+      ../../modules/home/cli
+      ../../modules/home/communication
+      ../../modules/home/desktop
+      ../../modules/home/gaming
+      ../../modules/home/media
+      ../../modules/home/productivity
+      ../../modules/home/secrets/sops.nix
       ./home.nix
     ];
     startAsUserService = true;

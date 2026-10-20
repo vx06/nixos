@@ -25,7 +25,16 @@
   home-manager = {
     useGlobalPkgs = true;
     useUserPackages = true;
-    users.vx = import ../../modules/home;
+    users.vx.imports = [
+      ../../modules/home
+      ../../modules/home/apps
+      ../../modules/home/cli
+      ../../modules/home/communication
+      ../../modules/home/desktop
+      ../../modules/home/media
+      ../../modules/home/productivity
+      ../../modules/home/secrets/sops.nix
+    ];
     startAsUserService = true;
     overwriteBackup = true;
     backupFileExtension = "hm-backup";

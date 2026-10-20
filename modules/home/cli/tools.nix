@@ -17,23 +17,15 @@
     onefetch
     bluetui
     caligula
-    dolphin-emu
-    # mumble # 1.5.915 failed to build
     tenki
     tarts
-    signal-desktop # messaging
-    simplex-chat-desktop # messaging
-    ticker
     sshs
     proton-vpn
     dust
     charm-freeze
     wthrr
     dive
-    remnote # study
-    orca-slicer # 3d printing
     inputs.ai-usagebar.packages.${pkgs.stdenv.hostPlatform.system}.default
-    inputs.subtui.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 
   programs.bat.enable = true;
@@ -42,8 +34,6 @@
   programs.lsd.enable = true;
   programs.skim.enable = true;
   programs.ripgrep.enable = true;
-  programs.mpv.enable = true;
-  programs.prismlauncher.enable = true;
 
   programs.nh = {
     enable = true;
