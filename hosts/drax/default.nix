@@ -15,6 +15,9 @@
 
   networking.hostName = "drax";
   networking.networkmanager.enable = true;
+  networking.networkmanager.plugins = with pkgs; [
+    networkmanager-openvpn
+  ];
 
   boot.loader.grub = {
     enable = true;
