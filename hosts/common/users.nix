@@ -8,6 +8,7 @@
     description = "vx";
     extraGroups = [
       "networkmanager"
+      "wireshark"
       "wheel"
     ];
     hashedPasswordFile = config.sops.secrets."vx/password_hash".path;

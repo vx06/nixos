@@ -3,13 +3,10 @@
   imports = [
     ./hardware-configuration.nix
     ../common
-    ../../modules/nixos/desktop/niri.nix
-    ../../modules/nixos/desktop/sddm.nix
-    ../../modules/nixos/hardware/bluetooth.nix
-    ../../modules/nixos/hardware/power.nix
+    ../../modules/nixos
     ../../modules/nixos/hardware/nvidia.nix
-    ../../modules/nixos/services/printing.nix
     ../../modules/nixos/gaming
+    ../../modules/nixos/tools/wireshark.nix
     inputs.home-manager.nixosModules.home-manager
   ];
 
@@ -18,6 +15,12 @@
   networking.networkmanager.plugins = with pkgs; [
     networkmanager-openvpn
   ];
+
+  # steam local game transfer
+  networking.firewall = {
+    allowedTCPPorts = [ 27040 ];
+    allowedUDPPorts = [ 27031 27032 27033 27034 27035 27036 ];
+  };
 
   boot.loader.grub = {
     enable = true;
@@ -49,6 +52,8 @@
       inherit inputs;
     };
   };
+
+
 
   system.stateVersion = "26.05";
 }

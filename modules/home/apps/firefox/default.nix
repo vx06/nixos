@@ -261,6 +261,8 @@
             "*://gitea.com/*"
             "*://github.com/*"
             "*://gitlab.com/*"
+            "*://git.sr.ht/*"
+            "*://hg.sr.ht/*"
             "*://tangled.org/*"
           ];
           "uBlock0@raymondhill.net" = {
@@ -286,6 +288,7 @@
             ];
             permissions = [
               "alarms"
+              "publicSuffix"
               "dns"
               "menus"
               "privacy"

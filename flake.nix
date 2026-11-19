@@ -34,10 +34,6 @@
       url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    ai-usagebar = {
-      url = "github:akitaonrails/ai-usagebar";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     #obsidian-extensions = {
     #  url = "github:karaolidis/nix-obsidian-extensions";
     #  inputs.nixpkgs.follows = "nixpkgs";

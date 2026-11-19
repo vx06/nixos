@@ -13,7 +13,7 @@
         default = {
           capsule_group = [
             {
-              fill = "surface_variant";
+              fill = "surface_container";
               id = "g1";
               members = [
                 "cpu"
@@ -26,7 +26,6 @@
           ];
           center = [ "workspaces" ];
           end = [
-            "felipeartur/ai-usagebar:bar"
             "clipboard"
             "andrewdems/vpn-manager:bar"
             "network"
@@ -100,7 +99,6 @@
         enabled = [
           "thepunkoff/pomodoro"
           "andrewdems/vpn-manager"
-          "felipeartur/ai-usagebar"
         ];
         source = [
           {

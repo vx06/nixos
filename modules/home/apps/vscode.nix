@@ -19,6 +19,8 @@
       "[nix]" = {
         "editor.tabSize" = 2;
       };
+      "discord.lowerDetailsDebugging" = "Debuggin on {git_branch}";
+      "discord.lowerDetailsEditing" = "Working on {git_branch}";
     };
   };
 }

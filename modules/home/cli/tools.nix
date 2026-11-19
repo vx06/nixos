@@ -10,7 +10,6 @@
   ];
 
   home.packages = with pkgs; [
-    code-cursor
     tokei
     igrep
     systemctl-tui
@@ -25,7 +24,6 @@
     charm-freeze
     wthrr
     dive
-    inputs.ai-usagebar.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 
   programs.bat.enable = true;
