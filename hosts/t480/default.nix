@@ -15,6 +15,9 @@
   networking.hostName = "t480";
   networking.wireless.enable = true;
   networking.networkmanager.enable = true;
+  networking.networkmanager.plugins = with pkgs; [
+    networkmanager-openvpn
+  ];
 
   # Bootloader
   boot.loader.systemd-boot.enable = true;
